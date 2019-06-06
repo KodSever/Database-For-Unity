@@ -20,7 +20,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MySql.Data.MySqlClient;
-public class mysqlVeritabani : MonoBehaviour
+public class MySqlDataVeritabani : MonoBehaviour
 {
   MySqlConnection conn;
   public string server, database, user_name, pass, port;
