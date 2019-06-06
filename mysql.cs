@@ -1,4 +1,4 @@
-# MYSQL NASIL KULLANILIR.
+// MYSQL NASIL KULLANILIR.
 Assembly klasorü oluştur.
 MySql.Data.dll dosyasını indir. https://www.dllme.com/dll/files/mysql_data_dll.html
 Assembly klasorünün içine MySql.Data.dll dosyasını at. 
