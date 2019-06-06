@@ -26,8 +26,6 @@ public class mysqlVeritabani : MonoBehaviour
     pass = "";
 
     port = "3306";
-
-        
   }
   void setConnection()
   {
@@ -47,4 +45,5 @@ public class mysqlVeritabani : MonoBehaviour
     catch (System.Exception ex){ Debug.LogError("Hata: " + ex.Message);}
   }
   void Update(){ if (Input.GetKeyDown(KeyCode.Space)){ setConnection(); }}
+  
 }
