@@ -2,8 +2,7 @@
 Assembly klasorü oluştur.
 MySql.Data.dll dosyasını indir. https://www.dllme.com/dll/files/mysql_data_dll.html
 Assembly klasorünün içine MySql.Data.dll dosyasını at. 
-Usingle çağır.
-ConnectionStrings ile değerlerini gir.
+Usingle çağır ve ConnectionStrings ile değerlerini gir.
 
 using System.Collections;
 using System.Collections.Generic;
