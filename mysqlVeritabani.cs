@@ -1,8 +1,20 @@
+//SUNUCU KAYNAKÇALAR
+  https://www.apachefriends.org/tr/index.html
+  http://www.wampserver.com/en/
+  https://www.mamp.info/en/
+
+//DLL KAYNAKÇA
+  https://www.dllme.com/dll/files/mysql_data_dll.html
+
+//BAĞLANTI STRINGI
+  https://www.connectionstrings.com/mysql/
+  
+
 // MYSQL NASIL KULLANILIR.
 Assembly klasorü oluştur.
-MySql.Data.dll dosyasını indir. https://www.dllme.com/dll/files/mysql_data_dll.html
+MySql.Data.dll dosyasını indir.
 Assembly klasorünün içine MySql.Data.dll dosyasını at. 
-Usingle çağır ve ConnectionStrings ile değerlerini gir. https://www.connectionstrings.com/mysql/
+Usingle çağır ve ConnectionStrings ile değerlerini gir. 
 
 using System.Collections;
 using System.Collections.Generic;
