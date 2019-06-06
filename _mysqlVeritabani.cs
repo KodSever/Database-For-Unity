@@ -44,10 +44,7 @@ public class _mysqlVeritabani : MonoBehaviour
       conn.Open();
       Debug.Log("Bağlantı Sağlandı! " + conn.State);
     }
-    catch (System.Exception ex)
-    {
-      Debug.LogError("Hata: " + ex.Message);
-    }
+    catch (System.Exception ex){ Debug.LogError("Hata: " + ex.Message);}
   }
   void Update(){ if (Input.GetKeyDown(KeyCode.Space)){ setConnection(); }}
 }
