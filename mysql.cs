@@ -10,43 +10,42 @@ using UnityEngine;
 using MySql.Data.MySqlClient;
 public class _veritabani : MonoBehaviour
 {
-    MySqlConnection conn;
+  MySqlConnection conn;
+  public string server, database, user_name, pass, port;
 
-    public string server, database, user_name, pass, port;
+  private void Start()
+  {
+    //server = "MySQL";//Bozuk
+    //server = ".";//Bozuk
 
-    private void Start()
-    {
-        //server = "MySQL";//Bozuk
-        //server = ".";//Bozuk
+    //server = "127.0.0.1"; //Sağlam
+    server = "localhost"; //Sağlam
 
-        //server = "127.0.0.1"; //Sağlam
-        server = "localhost"; //Sağlam
+    database = "dataBase1";
+    user_name = "root";
+    pass = "";
 
-        database = "dataBase1";
-        user_name = "root";
-        pass = "";
-
-        port = "3306";
+    port = "3306";
 
         
-    }
-    void setConnection()
+  }
+  void setConnection()
+  {
+    conn = new MySqlConnection();
+    //Portlu Bağlantı
+    conn.ConnectionString = "Server=" + server + ";Port=" + port + ";Database=" + database + ";Uid=" + user_name + ";Pwd=" + pass + ";";
+    
+    //Portsuz Bağlantı
+    //conn.ConnectionString = "Server="+server+";Database="+database+";Uid="+user_name+";Pwd="+pass+";";
+    try
     {
-        conn = new MySqlConnection();
-        conn.ConnectionString = "Server=" + server + ";Port=" + port + ";Database=" + database + ";Uid=" + user_name + ";Pwd=" + pass + ";";
-        //conn.ConnectionString = "Server="+server+";Database="+database+";Uid="+user_name+";Pwd="+pass+";";
-        try
-        {
-            conn.Open();
-            Debug.Log("Bağlantı Sağlandı! " + conn.State);
-        }
-        catch (System.Exception ex)
-        {
-            Debug.LogError("Hata: " + ex.Message);
-        }
+      conn.Open();
+      Debug.Log("Bağlantı Sağlandı! " + conn.State);
     }
-    void Update()
+    catch (System.Exception ex)
     {
-        if (Input.GetKeyDown(KeyCode.Space)){ setConnection(); }
+      Debug.LogError("Hata: " + ex.Message);
     }
+  }
+  void Update(){ if (Input.GetKeyDown(KeyCode.Space)){ setConnection(); }}
 }
