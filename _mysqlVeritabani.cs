@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MySql.Data.MySqlClient;
-public class _veritabani : MonoBehaviour
+public class _mysqlVeritabani : MonoBehaviour
 {
   MySqlConnection conn;
   public string server, database, user_name, pass, port;
@@ -32,11 +32,13 @@ public class _veritabani : MonoBehaviour
   void setConnection()
   {
     conn = new MySqlConnection();
+    
     //Portlu Bağlantı
     conn.ConnectionString = "Server=" + server + ";Port=" + port + ";Database=" + database + ";Uid=" + user_name + ";Pwd=" + pass + ";";
     
     //Portsuz Bağlantı
     //conn.ConnectionString = "Server="+server+";Database="+database+";Uid="+user_name+";Pwd="+pass+";";
+    
     try
     {
       conn.Open();
