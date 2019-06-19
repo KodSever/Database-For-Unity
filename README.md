@@ -1,15 +1,15 @@
-# ----------UNITY VERİTABANI----------
+# ----------UNITY DATABASE----------
 
-# SUNUCULAR
+# SERVERS
 * [WAMPSERVER](http://www.wampserver.com/en/)
 * [XAMPP](https://www.apachefriends.org/tr/index.html)
 * [MAMP](https://www.mamp.info/en/)
 
-# DLL KAYNAKÇA
+# DLL SOURCES
 * [DLL Me](https://www.dllme.com/dll/files/mysql_data_dll.html)
 * [DLL Files](https://www.dll-files.com)
 
-# BAĞLANTI STRINGI
+# CONNECTION STRINGS
 * [ConnectionStrings](https://www.connectionstrings.com/mysql/)
 
 # UNITY MYSQL & SQLITE
